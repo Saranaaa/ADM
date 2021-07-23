@@ -1,0 +1,27 @@
+.about-inner {
+    .part-img {
+        justify-content: flex-start;
+    }
+    .boxes {
+        padding-top: 80px;
+        .single-box {
+            background: $white-2;
+            border-radius: 10px;
+            padding: 55px 50px;
+            h3 {
+                font-size: 30px;
+                line-height: 100%;
+                font-weight: 700;
+                color: $color-2;
+                margin-bottom: -2px;
+            }
+            p {
+                font-size: 17px;
+                line-height: 29px;
+                color: $color-3;
+                margin-top: 28px;
+                margin-bottom: -15px;
+            }
+        }
+    }
+}

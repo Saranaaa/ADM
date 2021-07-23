@@ -1,0 +1,116 @@
+/*============================================================
+[Master Stylesheet]
+Theme Name:     Consted
+Version:        1.0
+Author:         athemeart
+URL:            https://themeforest.net/user/athemeart
+=========================================================*/
+/*=======================================================
+TABLE OF CONTENTS:
+
+01  global Style
+
+======section stylsheet======
+
+02  header section
+03  header section two
+04  main sidebar section
+05  banner section
+06  banner section two
+07  about section
+08  service section
+09  fun fact reason section
+10  project section
+11  recent work section 
+12  testimonial section
+13  testimonial section two
+14  team section
+15  blog section
+16  blog section two
+17  partner section
+18  footer section
+
+======inner page stylsheet======
+
+19  breadcrumb section for all page
+20  about page
+21  service page
+22  service details page
+23  team & team details page
+24  project page
+25  project details page
+26  blog grid & blog details page
+27  contact page
+28  error page
+
+======responsive stylsheet======
+
+29  responsive layout for all page*/
+
+@import "main/variable";
+/*########## 1. global style ##########*/
+@import "main/global";
+
+
+/*########## section style ##########*/
+
+//*========== 2. header section ==========*//
+@import "sections/header";
+//*========== 3. header section 2 ==========*//
+@import "sections/header-2";
+//*========== 4. sidebar section ==========*//
+@import "sections/sidebar";
+//*========== 5. banner section ==========*//
+@import "sections/banner";
+//*========== 6. banner section 2 ==========*//
+@import "sections/banner-2";
+//*========== 7. about section ==========*//
+@import "sections/about";
+//*========== 8. service section ==========*//
+@import "sections/service";
+//*========== 9. fun fact section ==========*//
+@import "sections/fun-fact";
+//*========== 10. project section ==========*//
+@import "sections/project";
+//*========== 11. recent work section ==========*//
+@import "sections/recent-work";
+//*========== 12. testimonial section ==========*//
+@import "sections/testimonial";
+//*========== 13. testimonial section ==========*//
+@import "sections/testimonial-2";
+//*========== 14. team section ==========*//
+@import "sections/team";
+//*========== 15. blog section ==========*//
+@import "sections/blog";
+//*========== 16. blog section 2 ==========*//
+@import "sections/blog-2";
+//*========== 17. partner section ==========*//
+@import "sections/partner";
+//*========== 18. footer section ==========*//
+@import "sections/footer";
+
+/*########## section style ##########*/
+
+//*========== 19. breadcrumb section for all page ==========*//
+@import "pages/breadcrumb";
+//*========== 20. about page ==========*//
+@import "pages/about";
+//*========== 21. service page ==========*//
+@import "pages/service";
+//*========== 22. service details page ==========*//
+@import "pages/service-details";
+//*========== 23. team & team details page ==========*//
+@import "pages/team";
+//*========== 24. project page ==========*//
+@import "pages/project";
+//*========== 25. project details page ==========*//
+@import "pages/project-details";
+//*========== 26. blog grid & blog details page ==========*//
+@import "pages/blog";
+//*========== 27. contact page ==========*//
+@import "pages/contact";
+//*========== 28. error page ==========*//
+@import "pages/error";
+
+/*########## 29. responsive layout for all page ##########*/
+@import "main/responsive";

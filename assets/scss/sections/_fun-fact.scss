@@ -1,0 +1,124 @@
+.fun-fact {
+    .bg {
+        position: relative;
+        background: $color-1;
+        border-radius: 10px;
+        margin-top: -40px;
+        z-index: 3;
+        .single-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 75px 0;
+            .txt {
+                padding-left: 40px;
+                position: relative;
+                z-index: 2;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                    background: $white;
+                    opacity: 0.09;
+                    z-index: -1;
+                }
+                h2 {
+                    font-size: 55px;
+                    line-height: 100%;
+                    font-weight: 700;
+                    color: $white;
+                    margin-top: -7px;
+                    margin-bottom: 3px;
+                    .odometer-formatting-mark {
+                        display: none;
+                    }
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 100%;
+                    font-weight: 600;
+                    color: $white;
+                    margin-bottom: -5px;
+                }
+            }
+        }
+    }
+}
+
+.fun-fact-2 {
+    background: url(../images/fun-fact-bg.jpg) center center no-repeat;
+    background-size: cover;
+    .single-box {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 70px 0;
+        position: relative;
+        &.last {
+            &:before, &:after {
+                display: none;
+            }
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -17.5px;
+            width: 35px;
+            height: 35px;
+            background: $white;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            opacity: 0.2;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -5.5px;
+            width: 11px;
+            height: 11px;
+            background: $white;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+        .txt {
+            h2 {
+                font-size: 55px;
+                line-height: 100%;
+                font-weight: 700;
+                color: $white;
+                padding-bottom: 17px;
+                margin-top: -8px;
+                margin-bottom: 17px;
+                position: relative;
+                &:after {
+                    content: "//";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: $white;
+                    font-size: 15px;
+                    line-height: 100%;
+                }
+                .odometer-formatting-mark  {
+                    display: none;
+                }
+            }
+            p {
+                font-size: 18px;
+                line-height: 100%;
+                font-weight: 600;
+                color: $white;
+                margin-bottom: -5px;
+            }
+        }
+    }
+}

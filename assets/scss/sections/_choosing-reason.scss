@@ -1,0 +1,196 @@
+.choosing-reason {
+    padding-bottom: 165px;
+    .bg {
+        background: url(../images/choosing-reason-bg.jpg) center center no-repeat;
+        background-size: cover;
+        padding: 120px 60px;
+        border-radius: 10px;
+        .consultation-form {
+            background: $color-7;
+            padding: 50px 30px;
+            border-radius: 10px;
+            margin-left: 190px;
+            margin-bottom: -210px;
+            position: relative;
+            z-index: 2;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -15px;
+                left: 15px;
+                right: 15px;
+                top: 0;
+                background: rgba($color-7, 0.3);
+                border-radius: 10px;
+                z-index: -1;
+            }
+            .title {
+                text-align: center;
+                font-size: 45px;
+                font-weight: 700;
+                color: $white;
+                margin-top: -11px;
+                margin-bottom: 39px;
+            }
+            form {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .wrap {
+                    margin: 0 10px 20px;
+                    width: 46%;
+                    input {
+                        background: $color-2;
+                        border-radius: 7px;
+                        height: 50px;
+                        padding: 0 20px;
+                        width: 100%;
+                        &::placeholder {
+                            color: $color-6;
+                        }
+                    }
+                    .select {
+                        width: 100%;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 16px;
+                        border: 0;
+                        border-radius: 7px;
+                        background: $color-2;
+                        color: $white;
+                        padding: 0 20px;
+                        &.open {
+                            &:after {
+                                transform: rotate(-145deg) skewX(157deg);
+                            }
+                        }
+                        &:after {
+                            border-color: $white;
+                            width: 10px;
+                            height: 9px;
+                            transform: rotate(32deg) skewX(157deg);
+                            right: 25px;
+                        }
+                        .list {
+                            margin: 0;
+                            li {
+                                color: $black-2;
+                            }
+                        }
+                    }
+                }
+                button {
+                    height: 50px;
+                    line-height: 50px;
+                    background: $white;
+                    color: $color-7;
+                    padding: 0 20px;
+                    border-radius: 7px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-left: 10px;
+                    margin-top: 15px;
+                }
+            }
+        }
+        .part-txt {
+            .title {
+                font-size: 45px;
+                font-weight: 700;
+                color: $black-2;
+                margin-top: -11px;
+                margin-bottom: 49px;
+            }
+            .single-box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background: $color-2;
+                border-radius: 10px;
+                padding: 30px;
+                margin-bottom: 40px;
+                position: relative;
+                z-index: 2;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 10px;
+                    right: 10px;
+                    bottom: -10px;
+                    background: rgba($color-2, 0.3);
+                    border-radius: 0 0 10px 10px;
+                    transition: all 0.4s ease-in;
+                    transition-delay: 0.2s;
+                    z-index: -1;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    background: $color-7;
+                    border-radius: 9px;
+                    transition: all 0.4s ease-in;
+                    z-index: -1;
+                }
+                .part-icon {
+                    width: 90px;
+                    height: 90px;
+                    background: $color-7;
+                    padding: 20px;
+                    border-radius: 7px;
+                    position: relative;
+                    z-index: 2;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 0;
+                        background: $color-2;
+                        border-radius: 6px;
+                        transition: all 0.4s ease-in;
+                        z-index: -1;
+                    }
+                }
+                .txt {
+                    width: 564px;
+                    h3 {
+                        font-size: 25px;
+                        line-height: 100%;
+                        font-weight: 700;
+                        color: $white;
+                        margin-top: -3px;
+                        margin-bottom: 21px;
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: $white;
+                        margin-bottom: -6px;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 10px;
+                }
+                &:hover {
+                    &:before {
+                        background: rgba($color-7, 0.3);
+                    }
+                    &:after {
+                        height: 100%;
+                    }
+                    .part-icon {
+                        &:after {
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

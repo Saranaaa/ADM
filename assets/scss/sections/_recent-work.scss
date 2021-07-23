@@ -1,0 +1,176 @@
+.recent-work {
+    padding: 120px 0;
+    background: url(../images/recent-work-bg.jpg) center center no-repeat;
+    background-size: cover;
+    .main-title {
+        font-size: 45px;
+        line-height: 100%;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        margin-top: -1px;
+        margin-bottom: 96px;
+        span {
+            color: $color-3;
+        }
+    }
+    .wrap {
+        max-width: 1770px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+        .works {
+            .work-slider {
+                .slick-list {
+                    border-radius: 10px;
+                    .single-box {
+                        margin: 0 25px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        position: relative;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba($color-1, 0.9);
+                            opacity: 0;
+                            transition: all 0.4s ease-in;
+                            z-index: 1;
+                        }
+                        .part-txt {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            align-items: center;
+                            transition: all 0.4s ease-in;
+                            opacity: 0;
+                            z-index: 2;
+                            h3 {
+                                font-size: 140px;
+                                line-height: 100%;
+                                font-weight: 700;
+                                color: $white;
+                                margin-bottom: 61px;
+                                opacity: 0.15;
+                            }
+                            .txt {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 0 70px 50px;
+                                transform: translateY(50px);
+                                transition: all 0.4s ease-in;
+                                .title {
+                                    font-size: 40px;
+                                    line-height: 100%;
+                                    font-weight: 700;
+                                    color: $white;
+                                    margin-bottom: 19px;
+                                }
+                                p {
+                                    font-size: 20px;
+                                    line-height: 100%;
+                                    font-weight: 500;
+                                    color: $white;
+                                    margin-bottom: -5px;
+                                }
+                                .details-btn {
+                                    text-align: center;
+                                    width: 62px;
+                                    height: 62px;
+                                    line-height: 67px;
+                                    font-size: 25px;
+                                    font-weight: 500;
+                                    color: $color-2;
+                                    background: $white;
+                                    border: 1px solid $white;
+                                    border-radius: 50%;
+                                    &:hover {
+                                        color: $white;
+                                        background: $color-2;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            &:after {
+                                opacity: 1;
+                            }
+                            .part-txt {
+                                opacity: 1;
+                                .txt {
+                                    transform: translateY(0);
+                                }
+                            }
+                        }
+                    }
+                }
+                .slick-arrow {
+                    position: absolute;
+                    top: -140px;
+                    left: 0;
+                    right: 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    visibility: hidden;
+                    button {
+                        text-align: center;
+                        width: 60px;
+                        height: 60px;
+                        line-height: 62px;
+                        font-size: 20px;
+                        color: $color-2;
+                        background: $white;
+                        border-radius: 50%;
+                        visibility: visible;
+                        &.slick-prev {
+                            margin-right: 80px;
+                        }
+                        &:hover {
+                            background: $color-1;
+                            color: $white;
+                        }
+                    }
+                }
+                .slick-dots {
+                    padding: 0;
+                    margin: 70px auto 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    list-style: none;
+                    background: $white;
+                    border-radius: 4px;
+                    height: 8px;
+                    width: max-content;
+                    overflow: hidden;
+                    li {
+                        button {
+                            width: 210px;
+                            height: 8px;
+                            border-radius: 4px;
+                            text-indent: -9999px;
+                        }
+                        &.slick-active {
+                            button {
+                                width: 260px;
+                                background: $color-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

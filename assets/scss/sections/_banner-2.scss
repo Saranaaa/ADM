@@ -1,0 +1,38 @@
+.banner-2 {
+    background: url(../images/banner-bg-4.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../images/banner-overlay-2.png) center center no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    .banner-txt {
+        padding: 240px 0;
+        h1 {
+            font-size: 60px;
+            line-height: 70px;
+            font-weight: 700;
+            color: $white;
+            margin-top: -8px;
+            margin-bottom: 15px;
+            span {
+                color: $color-1;
+            }
+        }
+        p {
+            font-size: 20px;
+            line-height: 38px;
+            font-weight: 500;
+            color: $white;
+            margin-bottom: 31px;
+        }
+    }
+}
