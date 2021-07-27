@@ -282,13 +282,13 @@
                     items: 4
                 },
                 768: {
-                    items: 5
+                    items: 4
                 },
                 960: {
-                    items: 5
+                    items: 4
                 },
                 1200: {
-                    items: 5
+                    items: 4
                 }
             }
         });

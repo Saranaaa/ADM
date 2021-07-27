@@ -281,12 +281,15 @@ span {
         .header .top-header .top-right ul li i {
           margin-right: 11px; }
   .header .bottom-header {
+    padding: 20px 0;
+
     background: #00215b; }
     .header .bottom-header.fixed-header {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
+      padding: 10px 0 ;
       -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
       box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1); }
       .header .bottom-header.fixed-header .logo {
@@ -297,7 +300,7 @@ span {
           box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1); }
     .header .bottom-header .logo {
       position: absolute;
-      top: -52px;
+      top: -35px;
       width: 120px;
       text-align: center;
       padding: 30px 0;
@@ -412,7 +415,17 @@ span {
     width: 100%;
     -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1); }
+    .header-2 .logo a{ 
+      padding: 20px;
+    }
+    .header .logo a img
+    {max-width: 86%;}
   .header-2 .navbar {
+    
+    display: flex;
+    align-items: center;
+    height: 100%;
+
     padding: 0; }
     .header-2 .navbar .navbar-nav .nav-item {
       padding: 0 20px; }
@@ -2073,7 +2086,7 @@ span {
       color: #fff; }
 
 .partner {
-  padding: 90px 0;
+  padding: 120px 0 90px;
   background: #F6F6F6; }
   .partner .partner-slider .single-partner {
     width: 100%;
@@ -2097,8 +2110,8 @@ span {
     -webkit-filter: grayscale(1);
     filter: grayscale(1); }
     .partner .partner-slider .single-partner img {
-      width: auto;
-      height: 100%; }
+      width: 75%;
+      /* height: 100%;*/ } 
     .partner .partner-slider .single-partner:hover {
       -webkit-filter: grayscale(0);
       filter: grayscale(0); }
@@ -2108,6 +2121,9 @@ span {
   background-size: cover; }
   .footer .main-footer {
     padding: 120px 0; }
+    .footer .logo img{
+      max-width: 86%;
+    }
     .footer .main-footer h3.title {
       font-size: 35px;
       line-height: 100%;
@@ -2365,7 +2381,7 @@ span {
 /*########## section style ##########*/
 .breadcrumb {
   padding: 0;
-  margin-top: 124px;
+  margin-top: 100px;
   margin-bottom: 0;
   background: url(../images/breadcrumb-bg.jpg) center center no-repeat;
   background-size: cover;
