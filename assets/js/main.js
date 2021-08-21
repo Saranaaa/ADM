@@ -33,7 +33,20 @@
         }
     });
     $(document).ready(function(){
+       
 
+
+
+
+
+        $(".service-details .sidebar a").each((i,e)=>{
+            $(e).click(()=>{
+                $(".breadcrumb h1").html($(e).text());
+                console.log( $(".service-details .breadcrumb h1"));
+            })
+        })
+
+       
         // ===========nav sidebar show===========
         $(".side-bar-show").on('click', function(){
             $(".sidebar-bg, .main-sidebar").addClass("active")
@@ -265,33 +278,7 @@
         });
 
         // ==========partner slider===========
-        $('.partner-slider').owlCarousel({
-            loop: true,
-            smartSpeed: 1000,
-            margin: 0,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: false,
-            dots: false,
-            nav: false,
-            responsive: {
-                0: {
-                    items: 3
-                },
-                480: {
-                    items: 4
-                },
-                768: {
-                    items: 4
-                },
-                960: {
-                    items: 4
-                },
-                1200: {
-                    items: 4
-                }
-            }
-        });
+        
 
         // ==========project details page main image slider===========
         $('.project-details-slider').slick({
@@ -319,3 +306,12 @@
         })
     });
 }(jQuery));
+
+$("[aria-labelledby='serviceDropdown'] a").each((i,e)=>{
+    $(e).click(function(){
+        console.log($(this).attr("hreff"),$(this).text());
+        window.location.assign(window.location.origin+"/"+$(this).attr("hreff")+"?"+$(this).text())
+
+        $(".breadcrumb h1").html($(e).text());
+    })
+})

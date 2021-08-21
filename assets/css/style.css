@@ -333,7 +333,7 @@ span {
       padding: 0;
       padding-left: 9px; }
       .header .bottom-header .navbar .navbar-nav .nav-item {
-        padding: 29px 54px 25px 0; }
+        padding: 29px 34px 25px 0; }
         .header .bottom-header .navbar .navbar-nav .nav-item:last-child {
           padding-right: 0; }
         .header .bottom-header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
@@ -595,7 +595,7 @@ span {
       line-height: 100%;
       font-weight: 700;
       text-transform: capitalize;
-      color: #00215b;
+      color: #ffffff;
       padding-bottom: 6px;
       margin-bottom: 21px;
       position: relative; }
@@ -748,7 +748,7 @@ span {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../images/banner-overlay-2.png) center center no-repeat;
+    background: rgba(0, 0, 0, 0.267);
     background-size: cover;
     z-index: -1; }
   .banner-2 .banner-txt {
@@ -783,7 +783,8 @@ span {
   .about.about-2 .part-txt .def-btn {
     margin-top: 17px; }
   .about.about-2 .part-img {
-    padding-right: 0; }
+    padding-right: 0; 
+  }
     .about.about-2 .part-img img {
       max-width: 100%; }
   .about .part-img {
@@ -1024,12 +1025,18 @@ span {
           background: #f45905; }
 
 .service-2 {
+  background: #F6F6F6;
   padding: 120px 0; }
   .service-2 .service-boxes .single-box {
     text-align: center; }
     .service-2 .service-boxes .single-box .wrap {
+      padding-bottom: 30px;
       border-radius: 10px;
       overflow: hidden; }
+      .service-2 .service-boxes .single-box .wrap .part-img img{
+        height: 218px;
+        object-fit: cover;
+      }
       .service-2 .service-boxes .single-box .wrap .part-txt {
         text-align: center;
         padding: 0 35px;
@@ -2106,15 +2113,12 @@ span {
     justify-content: center;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
-    transition: 0.4s;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1); }
+    transition: 0.4s;}
     .partner .partner-slider .single-partner img {
-      width: 75%;
-      /* height: 100%;*/ } 
+      width: 75%; } 
     .partner .partner-slider .single-partner:hover {
-      -webkit-filter: grayscale(0);
-      filter: grayscale(0); }
+      cursor: pointer;
+    }
 
 .footer {
   background: url(../images/footer-bg.jpg) center center no-repeat;
@@ -2388,6 +2392,9 @@ span {
   border-radius: 0;
   position: relative;
   z-index: 2; }
+  .breadcrumb a{
+    color: #fff;
+  }
   .breadcrumb:after {
     content: "";
     position: absolute;
@@ -3177,7 +3184,7 @@ span {
       border-radius: 5px;
       margin-bottom: 30px; }
       .blog-details .main-content .post-a-comment form input::-webkit-input-placeholder {
-        color: #546e9b; }
+        color: #d6e5ff; }
       .blog-details .main-content .post-a-comment form input:-ms-input-placeholder {
         color: #546e9b; }
       .blog-details .main-content .post-a-comment form input::-ms-input-placeholder {
@@ -3324,51 +3331,56 @@ span {
   .contact .form-area .title {
     margin-bottom: 39px; }
     .contact .form-area .title h2 {
-      font-size: 48px;
+      font-size: 35px;
       line-height: 100%;
       font-weight: 700;
-      color: #00215b;
+      color: #ffffff;
       margin-top: -3px;
       margin-bottom: 11px; }
     .contact .form-area .title p {
       font-size: 16px;
       line-height: 29px;
-      color: #546e9b;
+      color: #c8d2e2;
       margin-bottom: 0; }
+      .contact .form-area form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
   .contact .form-area form input {
-    width: 100%;
-    height: 55px;
+    width: 48%;
+    height: 45px;
     border: 1px solid #e1e1e1;
     border-radius: 5px;
     padding: 0 30px;
     margin-bottom: 20px;
     font-size: 17px;
-    color: #546e9b; }
+    color: #ffffff; }
     .contact .form-area form input::-webkit-input-placeholder {
-      color: rgba(0, 33, 91, 0.4); }
+      color: rgba(255, 255, 255, 0.4); }
     .contact .form-area form input:-ms-input-placeholder {
-      color: rgba(0, 33, 91, 0.4); }
+      color: rgba(255, 255, 255, 0.4); }
     .contact .form-area form input::-ms-input-placeholder {
-      color: rgba(0, 33, 91, 0.4); }
+      color: rgba(255, 255, 255, 0.4); }
     .contact .form-area form input::placeholder {
-      color: rgba(0, 33, 91, 0.4); }
+      color: rgba(255, 255, 255, 0.4); }
   .contact .form-area form textarea {
     width: 100%;
-    height: 220px;
+    height: 150px;
     border: 1px solid #e1e1e1;
     border-radius: 5px;
-    padding: 20px 30px;
+    padding: 15px 30px;
     margin-bottom: 32px;
     font-size: 17px;
-    color: #546e9b; }
+    color: #ffffff; }
     .contact .form-area form textarea::-webkit-input-placeholder {
-      color: rgba(0, 33, 91, 0.4); }
+      color: rgba(255, 255, 255, 0.4); }
     .contact .form-area form textarea:-ms-input-placeholder {
-      color: rgba(0, 33, 91, 0.4); }
+      color: rgba(255, 255, 255, 0.4); }
     .contact .form-area form textarea::-ms-input-placeholder {
-      color: rgba(0, 33, 91, 0.4); }
+      color: rgba(255, 255, 255, 0.4); }
     .contact .form-area form textarea::placeholder {
-      color: rgba(0, 33, 91, 0.4); }
+      color: rgba(255, 255, 255, 0.4); }
   .contact .address-area .single-box {
     padding: 50px;
     background: #F6F6F6;
