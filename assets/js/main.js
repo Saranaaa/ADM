@@ -4,7 +4,7 @@
     //==========preloder===========
     var preLoder = $(".preloader");
     preLoder.fadeOut(1000);
-    sessionStorage.setItem("service-page","Drilling");
+    sessionStorage.setItem("service-page", "Drilling");
     // ===========portfolio isotop data filter===========
     $(".controls").on("click", ".port-btn", function () {
       $(this).addClass("active").siblings().removeClass("active");
@@ -37,10 +37,13 @@
   $(document).ready(function () {
     $("[aria-labelledby='serviceDropdown'] a").each((i, e) => {
       $(e).click(() => {
-        window.sessionStorage.setItem("service-page", $(e).html());
+        window.sessionStorage.setItem("service-page", $(e).text());
       });
-      $(".service-detail.breadcrumb h1").html(sessionStorage.getItem("service-page"));
+      $(".service-detail.breadcrumb h1").html(
+        sessionStorage.getItem("service-page")
+      );
     });
+
     let finded = $(".service-details .sidebar a").filter((i, el) => {
       return $(el).text() == sessionStorage.getItem("service-page");
     });
@@ -60,6 +63,33 @@
         $(".service-detail.breadcrumb h1").html($(e).text());
       });
     });
+
+    if ($(".project-inner").lenght > 0) {
+      $(".project-inner .items .single-item a").each((i, e) => {
+        $(e).click((ev) => {
+          ev.preventDefault();
+          let img = $(ev.target)
+            .parents(".single-item")
+            .find(".part-img img")
+            .clone();
+          $(".project-overlay").empty();
+          $(".project-overlay").append('<span class="close"></span>');
+          $(".project-overlay .close").click(() => {
+            $(".project-overlay").fadeOut();
+          });
+          $(".project-overlay").append(img);
+          $(".project-overlay").fadeIn();
+          console.log(img);
+        });
+      });
+
+      $(".project-overlay").click((e) => {
+        console.log(e.target);
+        if ($(e.target) != $(".project-overlay img")) {
+          $(e.target).fadeOut();
+        }
+      });
+    }
 
     // ===========nav sidebar show===========
     $(".side-bar-show").on("click", function () {
