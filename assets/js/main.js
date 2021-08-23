@@ -64,7 +64,6 @@
       });
     });
 
-    if ($(".project-inner").lenght > 0) {
       $(".project-inner .items .single-item a").each((i, e) => {
         $(e).click((ev) => {
           ev.preventDefault();
@@ -84,12 +83,10 @@
       });
 
       $(".project-overlay").click((e) => {
-        console.log(e.target);
         if ($(e.target) != $(".project-overlay img")) {
           $(e.target).fadeOut();
         }
       });
-    }
 
     // ===========nav sidebar show===========
     $(".side-bar-show").on("click", function () {
